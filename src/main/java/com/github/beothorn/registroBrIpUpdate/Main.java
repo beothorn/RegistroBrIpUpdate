@@ -29,6 +29,7 @@ public class Main {
 	    System.out.println("Current IP: "+ip);
 	    String oldIp = "No previous IP.";
 	    File ipFile = new File(HomeDir.homeFolder(),"ip.txt");
+	    System.out.println("IP file: "+ipFile.getAbsolutePath());
 	    if(ipFile.exists()){
 	    	oldIp = FileUtils.readFileToString(ipFile);
 	    }
