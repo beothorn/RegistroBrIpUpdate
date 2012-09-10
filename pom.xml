@@ -14,7 +14,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>br.com.isageek.registroBrUpdate.Main</mainClass>
+							<mainClass>com.github.beothorn.registroBrIpUpdate.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
