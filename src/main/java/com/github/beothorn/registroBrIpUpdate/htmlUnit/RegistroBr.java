@@ -57,7 +57,7 @@ public class RegistroBr {
 		String loggedPageHtmlCode = loggedPage.getWebResponse().getContentAsString();
 		Document parse = Jsoup.parse(loggedPageHtmlCode);
 		Elements domainConfigLinkElement = parse.select("td.domainList > a");
-		String domainConfigLink = REGISTRO_BR+domainConfigLinkElement.attr("href");
+		String domainConfigLink = domainConfigLinkElement.attr("href");
 		HtmlPage domainConfigLinkPage = webClient.getPage(domainConfigLink);
 		HtmlForm htmlForm = domainConfigLinkPage.getHtmlElementById("domainForm");
 		final HtmlSubmitInput button = htmlForm.getInputByName("editZone");
